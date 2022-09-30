@@ -1,144 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration Form</title>
+        <title>Booking Form</title>
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-
-        <div class="wrapper">
-            <div class="title">
-                Registration Form
-            </div>
-        <div class="form">
-            <div class="inputField">
-                <label>First Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputField">
-                <label>Last Name</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputField">
-                <label>Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="inputField">
-                <label>Confirm Password</label>
-                <input type="password" class="input">
-            </div>
-            <div class="inputField">
-                <label>Gender</label>
-                <div class="custom-select">
-                <select>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-            <div class="inputField">
-                <label>Email Address</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputField">
-                <label>Phone Number</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputField">
-                <label>Address</label>
-                <textarea class="textarea"></textarea>
-            </div>
-            <div class="inputField">
-                <label>Postal Code</label>
-                <input type="text" class="input">
-            </div>
-            <div class="inputField terms">
-                <label class="check">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <p>Agreed to terms and conditions</p>
-            </div>
-            <div class="inputField">
-                <input type="submit" value="Register" class="btn">
-            </div>
-        </div>
-    </div>
-    </body>
-
-</html>
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Reserve.</title>
-</head>
 <body>
-    <form action="#" class="form">
-        <h1 class="text-center">KSS Booking Form</h1>
-        <div class="form-step form-step-active">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-            </div>
-            <div class="input-group">
-                <label for="position">Position</label>
-                <input type="text" name="position" id="position">
-            </div>
-            <div class="">
-                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
-            </div>
-        </div>
-        <div class="form-step form-step-active">
-            <div class="input-group">
-                <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone">
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-            </div>
-            <div class="btns-group">
-                <a href="#" class="btn btn-prev">Previous</a>
-                <a href="#" class="btn btn-next">Next</a>
-            </div>
-            <div class="form-step form-step-active">
-                <div class="input-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" name="dob" id="dob">
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter full name" required>
                 </div>
-                <div class="input-group">
-                    <label for="ID">National ID</label>
-                    <input type="number" name="ID" id="ID">
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter username" required>
                 </div>
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Previous</a>
-                    <a href="#" class="btn btn-next">Next</a>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter email" required>
                 </div>
-                <div class="form-step form-step-active">
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div class="input-group">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
-                    </div>
-                    <div class="btns-group">
-                        <a href="#" class="btn btn-prev">Previous</a>
-                        <a href="#" class="btn btn-next">Next</a>
-                    </div>
-        </div>
-    </form>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter phone number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="Confirm password" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot one"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot one"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="register">
+            </div>
+        </form>
+    </div>
 </body>
-</html> -->
+</html>
