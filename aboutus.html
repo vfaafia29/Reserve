@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>KSS Website</title>
-    <!-- Haven't included Font Awesome link -->
+    <title>Kingston Service Station</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <a href="#" class="logo"><i class="fa-solid fa-car"></i>Kingston Service Station</a>
+    <a href="index.html" class="logo"><i class="fa-solid fa-car"></i>Kingston Service Station</a>
     <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="aboutus.html">About</a>
       <a href="services.html">Services</a>
       <a href="staff.html">Staff</a>
       <a href="booking.html">Book</a>
-      <a href="review.html">Review</a>
     </nav>
 
 
@@ -33,14 +31,50 @@
 
   <div class="row">
 
-      <div class="image">
+      <!-- <div class="image">
           <img src="image/about-img.svg" alt="">
-      </div>
+      </div> -->
+
+      <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="img4.JPG">
+    <div class="Info">First caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img src="img5.JPG">
+    <div class="Info">Second Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img src="img3.JPG">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<!-- <div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div>  -->
+
+      
 
       <div class="content">
-          <h3>we take care of your healthy life</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+          <h3>With our quality expertise, we can assure your car is in safe hands</h3>
+          <p>We took over and bought the business from Harry Wong the former boss of 18 years. We are committed to continuously serve our existing customers and at the same time welcome any new customers. We believe in the service we offer as it comes with years of experience which ensures our customers are satisfied.</p>
           <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
       </div>
 
@@ -49,6 +83,7 @@
 </section>
 
 <!-- about section ends -->
+
 
 <!-- footer section starts  -->
 
@@ -63,7 +98,6 @@
             <a href="services.html"> <i class="fas fa-chevron-right"></i> services </a>
             <a href="staff.html"> <i class="fas fa-chevron-right"></i> staff </a>
             <a href="booking.html"> <i class="fas fa-chevron-right"></i> book </a>
-            <a href="review.html"> <i class="fas fa-chevron-right"></i> review </a>
       </div>
 
       <div class="box">
@@ -99,7 +133,7 @@
 <!-- footer section ends -->
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 
 </body>
