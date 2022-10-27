@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Kingston Service Station</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -26,7 +26,6 @@
     <!-- Menu button -->
     <div id="menu-btn" class="fas fa-bars"></div>
   </header>
-<body>
   <section class="book" id="book">
 
     <h1 class="heading"> <span>Book</span> Now </h1>    
@@ -37,18 +36,17 @@
             <img src="img2.JPG" alt="">
         </div>
 
-
         <form action="">
-            <!-- Booking Form -->
+            <!-- Booking Form - Input types are specific to each field -->
             <h3>Book Appointment</h3>
-            <input type="text" placeholder="enter your full name" class="box">
-            <input type="number" placeholder="enter your number" class="box">
-            <input type="text" placeholder="enter car make" class="box">
-            <input type="text" placeholder="enter car model" class="box">
-            <input type="number" placeholder="enter car year" class="box">
-            <input type="text" placeholder="enter registration number" class="box">
-            <input type="date" class="box">
-            <input type="time" class="box">
+            <input type="text" placeholder="enter your full name" class="box" required>
+            <input type="number" placeholder="enter your number" class="box" required>
+            <input type="text" placeholder="enter car make" class="box" required>
+            <input type="text" placeholder="enter car model" class="box" required>
+            <input type="number" placeholder="enter car year" class="box" required>
+            <input type="text" placeholder="enter registration number" class="box" required>
+            <input type="date" class="box" required>
+            <input type="time" class="box" required>
             <input type="submit" value="book now" class="btn">
         </form>
 
@@ -75,7 +73,7 @@
             <a href="booking.html"> <i class="fas fa-chevron-right"></i> Book </a>
         </div>
 
-        <!-- links to services page for -->
+        <!-- links to services page-->
         <div class="box">
             <h3>Our Services</h3>
             <a href="services.html"> <i class="fas fa-chevron-right"></i> WOF </a>
@@ -110,7 +108,7 @@
 
 
 
-<!-- custom js file link  -->
+<!-- js file link  -->
 <script src="script.js"></script>
 
 
